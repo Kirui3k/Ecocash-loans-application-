@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoCash Loan Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>EcoCash Loan Application</h1>
+    <p>Fill in the form below to apply for a loan</p>
+
+    <form id="loanForm">
+
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter full name" required>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="07XXXXXXXX" required>
+
+      <label>ID Number</label>
+      <input type="text" id="idNumber" placeholder="Enter ID number" required>
+
+      <label>Amount Requested (KES)</label>
+      <input type="number" id="amount" placeholder="e.g. 5000" required>
+
+      <label>Loan Purpose</label>
+      <input type="text" id="purpose" placeholder="e.g. school fees, business" required>
+
+      <label>Employment Status</label>
+      <select id="employment" required>
+        <option value="">Select status</option>
+        <option value="employed">Employed</option>
+        <option value="self-employed">Self Employed</option>
+        <option value="student">Student</option>
+        <option value="unemployed">Unemployed</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
